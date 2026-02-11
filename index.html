@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정은의 Lotto Number Generator</title>
+    <meta name="description" content="정은의 로또 번호 생성기: 번호 생성, 기록 관리, 확률 가이드, FAQ, 제휴 문의까지 제공하는 간단한 도구.">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3517383401226116" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,23 +12,61 @@
     <div class="container">
         <header>
             <h1>정은의 Lotto Number Generator</h1>
+            <p class="subtitle">로또 번호 생성기와 함께 확률, 사용 가이드, 기록 관리까지 한 번에.</p>
+            <nav class="site-nav">
+                <a href="#generator">번호 생성</a>
+                <a href="#guide">가이드</a>
+                <a href="#stats">확률</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">제휴 문의</a>
+                <a href="#comments">댓글</a>
+            </nav>
         </header>
         <main>
-            <div class="number-display">
+            <section id="generator" class="card">
+                <h2>번호 생성</h2>
+                <p class="muted">1~45 범위에서 중복 없이 6개를 추첨합니다.</p>
+                <div class="number-display">
                 <span class="number"></span>
                 <span class="number"></span>
                 <span class="number"></span>
                 <span class="number"></span>
                 <span class="number"></span>
                 <span class="number"></span>
-            </div>
-            <button id="generate-btn">Generate Numbers</button>
+                </div>
+                <button id="generate-btn">Generate Numbers</button>
+            </section>
+
+            <section id="guide" class="card">
+                <h2>사용 가이드</h2>
+                <p>이 도구는 번호를 빠르게 생성하고, 생성 기록을 보관해 다음 회차 전략을 세우는 데 도움을 줍니다. 번호는 단순한 무작위 결과이며, 당첨을 보장하지 않습니다.</p>
+                <ul class="content-list">
+                    <li>버튼을 누를 때마다 새로운 번호가 생성됩니다.</li>
+                    <li>아래 기록 영역에서 최근 생성 내역을 확인할 수 있습니다.</li>
+                    <li>생성된 번호는 참고용이며, 구매는 본인의 판단으로 진행하세요.</li>
+                </ul>
+            </section>
+
+            <section id="stats" class="card">
+                <h2>확률과 이해</h2>
+                <p>로또는 본질적으로 확률 게임입니다. 번호 조합의 총 경우의 수는 매우 크며, 장기적으로 기대값은 음수입니다. 따라서 재미와 책임 있는 소비 관점에서 접근하는 것이 중요합니다.</p>
+                <p class="muted">이 페이지는 정보 제공 목적이며, 재정적 조언을 제공하지 않습니다.</p>
+            </section>
         </main>
         <section class="history">
             <h2>History</h2>
             <ul id="history-list"></ul>
         </section>
-        <section class="contact">
+        <section id="faq" class="card">
+            <h2>FAQ</h2>
+            <ul class="content-list">
+                <li>번호는 어떻게 생성되나요? 랜덤 알고리즘으로 1~45에서 중복 없이 6개를 선택합니다.</li>
+                <li>당첨 확률이 올라가나요? 아닙니다. 당첨 확률은 변하지 않습니다.</li>
+                <li>기록은 어디에 저장되나요? 현재는 페이지 내 기록 리스트에 표시됩니다.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact card">
             <h2>제휴 문의</h2>
             <form action="https://formspree.io/f/mojnjnov" method="POST">
                 <label>
@@ -45,7 +84,7 @@
                 <button type="submit" class="form-submit">보내기</button>
             </form>
         </section>
-        <section class="comments">
+        <section id="comments" class="comments card">
             <h2>댓글</h2>
             <div id="disqus_thread"></div>
             <script>
@@ -66,6 +105,23 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+        <section class="card">
+            <h2>운영 정보</h2>
+            <p>이 사이트는 로또 번호 생성과 관련 정보를 제공하는 개인 프로젝트입니다. 정책과 문의는 아래를 참고하세요.</p>
+            <div class="policy-links">
+                <a href="#privacy">개인정보 처리방침</a>
+                <a href="#terms">이용약관</a>
+            </div>
+        </section>
+        <section id="privacy" class="card legal">
+            <h2>개인정보 처리방침</h2>
+            <p>본 사이트는 제휴 문의 폼(Formspree)을 통해 이름, 이메일, 문의 내용을 수집합니다. 수집된 정보는 문의 응답 목적 외에는 사용하지 않습니다.</p>
+            <p>댓글 기능은 Disqus를 통해 제공되며, 해당 서비스의 개인정보 처리방침이 적용됩니다.</p>
+        </section>
+        <section id="terms" class="card legal">
+            <h2>이용약관</h2>
+            <p>본 사이트의 콘텐츠는 정보 제공 목적이며, 당첨을 보장하지 않습니다. 사용자는 자신의 책임 하에 서비스를 이용합니다.</p>
         </section>
     </div>
     <script src="main.js"></script>
